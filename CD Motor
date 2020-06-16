@@ -1,0 +1,21 @@
+int motorA_1R=9;
+int motorA_2l=10;
+int motorB_1R=3;
+int motorB_2l=6;
+
+void setup() {
+ pinMode(motorA_1R,OUTPUT);
+  pinMode(motorA_2l,OUTPUT);
+   pinMode(motorB_1R,OUTPUT);
+  pinMode(motorB_2l,OUTPUT);
+}
+
+void loop() {
+ 
+  analogWrite(motorA_1R, 255);
+  analogWrite(motorA_2l, 0);
+  
+  analogWrite(motorB_1R, 255);
+  analogWrite(motorB_2l, 0);
+  delay(100);
+}
