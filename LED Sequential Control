@@ -1,0 +1,21 @@
+int LED =5;
+int LED2 =6;
+int LED3=7;
+int LEDi;
+
+void setup() {
+pinMode (LED ,OUTPUT);
+pinMode(LED2,OUTPUT);
+pinMode(LED3,OUTPUT);
+
+
+}
+void loop (){
+
+for(LEDi=5; LEDi <=7; LEDi ++){
+  digitalWrite(LEDi,HIGH);
+  delay(500);
+  digitalWrite(LEDi,LOW);
+  
+}
+}
